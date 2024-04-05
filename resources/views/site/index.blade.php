@@ -1,6 +1,15 @@
 @include('layouts.style')
-<div class="container-fluid"></div>
-<div class="container-sm mt-5 rounded border border-2 border-warning">
+
+<nav class="navbar bg-primary-subtle">
+    <div class="container-fluid">
+        <div>
+            <img src="img/coruja.png" alt="coruja" width="100" height="80" class="d-inline-block">
+            Simulado
+        </div>
+    </div>
+</nav>
+
+<div class="container-sm mt-5 mb-5 rounded border border-2 border-warning">
     <form action="#" method="POST">
         <p class="mt-2">1- Observe a figura abaixo.</p>
         <img src="img/quadrado.jpeg" alt="quadrado" width="200px" height="200px">
@@ -131,8 +140,14 @@
             </div>
         </div>
         <hr>
-        <div>
-            <button class="btn btn-success">Enviar</button>
+        <div class="d-grid col-12 mt-2 justify-content-end">
+            <button class="btn btn-outline-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 3.0rem; --bs-btn-font-size: 1.5rem;">
+                Enviar
+            </button>
         </div>
     </form>
+</div>
+<div class="container-fluid bg-primary">
+    RODAPE
 </div>
