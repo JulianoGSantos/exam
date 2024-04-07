@@ -10,7 +10,8 @@
 </nav>
 
 <div class="container-sm mt-5 mb-5 rounded border border-2 border-warning">
-    <form action="#" method="POST">
+    <form action="{{ route('form-store')}}" method="POST">
+        @csrf
         <p class="mt-2">1- Observe a figura abaixo.</p>
         <img src="img/quadrado.jpeg" alt="quadrado" width="200px" height="200px">
         <p>A parte colorida corresponde a:</p>

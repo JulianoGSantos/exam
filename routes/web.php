@@ -15,6 +15,7 @@ Route::get('/dashboard', function () {
 Route::middleware('auth')->group(function () {
     //Principais Rotas
     Route::get('formulario', [FormController::class, 'index'])->name('form-index');
+    Route::post('formulario', [FormController::class, 'store'])->name('form-store');
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
