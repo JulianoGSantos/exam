@@ -44,22 +44,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <input type="radio" name="first" id="2/6" value="2/6">
-                    <label for="2/6">2/6</label>
+                    <input type="radio" name="second" id="1" value="1">
+                    <label for="1">1</label>
                 </div>
                 <div class="col-2">
-                    <input type="radio" name="first" id="3/6" value="3/6">
-                    <label for="3/6">3/6</label>
+                    <input type="radio" name="second" id="2" value="2">
+                    <label for="2">2</label>
                 </div>
             </div>
             <div class="row">
                 <div class="col-2">
-                    <input type="radio" name="first" id="1/2" value="1/2">
-                    <label for="1/2">1/2</label>
+                    <input type="radio" name="second" id="3" value="3">
+                    <label for="3">3</label>
                 </div>
                 <div class="col-2">
-                    <input type="radio" name="first" id="3/8" value="3/8">
-                    <label for="3/8">3/8</label>
+                    <input type="radio" name="second" id="4" value="4">
+                    <label for="4">4</label>
                 </div>
             </div>
         </div>
