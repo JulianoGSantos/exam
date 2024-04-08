@@ -7,3 +7,7 @@
     <hr />
     <p class="mb-0">Aguarde a correção do Simulado, logo retornaremos com o resultado.</p>
 </div>
+<div class="row justify-content-center mt-5">
+    <a class="btn btn-danger col-2" role="button" href=" {{ route('login') }}"
+    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 3.0rem; --bs-btn-font-size: 1.5rem;">Sair</a>
+</div>

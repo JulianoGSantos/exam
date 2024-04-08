@@ -6,13 +6,17 @@
             <img src="img/coruja.png" alt="coruja" width="100" height="80" class="d-inline-block">
             Simulado
         </div>
+        <div>
+            <a class="btn btn-danger" role="button" href=" {{ route('login') }}"
+            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 3.0rem; --bs-btn-font-size: 1.5rem;">Sair</a>
+        </div>
     </div>
 </nav>
 
 <div class="container-sm mt-5 mb-5 rounded border border-2 border-warning">
     <form action="{{ route('form-store')}}" method="POST">
         @csrf
-        <p class="mt-2">1- Observe a figura abaixo.</p>
+        <p class="mt-2"><span class="text-danger" style="font-size: 1.4rem;">1-</span> Observe a figura abaixo.</p>
         <img src="img/quadrado.jpeg" alt="quadrado" width="200px" height="200px">
         <p>A parte colorida corresponde a:</p>
         <div class="container">
@@ -38,7 +42,7 @@
             </div>
         </div>
         <hr>
-        <p class="mt-2">2- Observe a figura abaixo.</p>
+        <p class="mt-2"><span class="text-danger" style="font-size: 1.4rem;">2-</span> Observe a figura abaixo.</p>
         <img src="img/quadrado.jpeg" alt="quadrado" width="200px" height="200px">
         <p>A parte colorida corresponde a:</p>
         <div class="container">
@@ -64,7 +68,7 @@
             </div>
         </div>
         <hr>
-        <p class="mt-2">3- Observe as figuras abaixo.</p>
+        <p class="mt-2"><span class="text-danger" style="font-size: 1.4rem;">3-</span> Observe as figuras abaixo.</p>
         <img src="img/celulas.jpeg" alt="celulas" width="400px" height="200px">
         <p>As figuras que representam a mesma parte são:</p>
         <div class="container">
@@ -90,7 +94,7 @@
             </div>
         </div>
         <hr>
-        <p class="mt-2">4- Uma pizza foi dividida em 8 pedaços iguais:</p>
+        <p class="mt-2"><span class="text-danger" style="font-size: 1.4rem;">4-</span> Uma pizza foi dividida em 8 pedaços iguais:</p>
         <img src="img/pizza.jpeg" alt="pizza" width="200px" height="200px">
         <p>Se a pizza custar 24 reais, quanto custará 1/8 dela?</p>
         <div class="container">
@@ -116,7 +120,7 @@
             </div>
         </div>
         <hr>
-        <p class="mt-2">5- Na fazenda de Marcos há muitas vacas. Marcos vendeu 2/3 dessas vacas e ainda sobraram 48 vacas. Quantas vacas havia na fazenda?</p>
+        <p class="mt-2"><span class="text-danger" style="font-size: 1.4rem;">5-</span> Na fazenda de Marcos há muitas vacas. Marcos vendeu 2/3 dessas vacas e ainda sobraram 48 vacas. Quantas vacas havia na fazenda?</p>
         <img src="img/vaca.jpeg" alt="vaca" width="300px" height="200px">
         <div class="container">
             <div class="row">
@@ -149,6 +153,7 @@
         </div>
     </form>
 </div>
-<div class="container-fluid bg-primary">
-    RODAPE
-</div>
+<footer class="container-fluid bg-dark">
+    <p class="row p-5 justify-content-end text-light" style="font-size: 1.0rem;">Desenvolvido por Gênesis</p>
+</footer>
+
