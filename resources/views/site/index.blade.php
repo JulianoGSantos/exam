@@ -6,10 +6,13 @@
             <img src="img/coruja.png" alt="coruja" width="100" height="80" class="d-inline-block">
             Simulado
         </div>
-        <div>
-            <a class="btn btn-danger" role="button" href=" {{ route('login') }}"
-            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 3.0rem; --bs-btn-font-size: 1.5rem;">Sair</a>
-        </div>
+        <form action="/logout" method="POST">
+            @csrf
+            <div>
+                <a class="btn btn-danger" role="button" href="/logout" onclick="event.preventDefault();this.closest('form').submit();"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 3.0rem; --bs-btn-font-size: 1.5rem;">Sair</a>
+            </div>
+        </form>
     </div>
 </nav>
 
