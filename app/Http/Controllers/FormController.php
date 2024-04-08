@@ -16,7 +16,8 @@ class FormController extends Controller
 
     public function store(ExamRequest $request){
         $data = new Form();
-        
+        $data->user_id = auth()->id();
+
         $data->first = $request->first;
         $data->second = $request->second;
         $data->third = $request->third;
@@ -24,7 +25,7 @@ class FormController extends Controller
         $data->fifth = $request->fifth;
 
         $data->save();
-
+        
         return view('site.store');
     }
 }

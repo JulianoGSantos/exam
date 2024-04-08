@@ -16,4 +16,8 @@ class Form extends Model
         'fourth',
         'fifth',
     ];    
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }
